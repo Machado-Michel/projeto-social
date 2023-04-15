@@ -74,6 +74,7 @@ body {
 }
 
 footer {
+    overflow: hidden;
     position: absolute;
     bottom: 0px;
     color: var(--color-white);
