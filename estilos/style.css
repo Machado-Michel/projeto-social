@@ -1,4 +1,4 @@
-@charset "UTF-*";
+@charset "UTF-8";
 
 * {
     margin: 0;
@@ -71,7 +71,7 @@ body {
 }
 
 
-@media screen and (max-width:48em), (max-height:51.30em) {
+@media screen and (max-width:768px), (max-height: 850px) {
  
     .btn_icon_header {
         display: block;
@@ -81,10 +81,10 @@ body {
     flex-direction: column;
     top: 0;
     background-color: var(--color-fundo);
-    height: 60%;
+    height: 80%;
     width: 35vw;
     padding: 1em;
-    animation-duration: 1s ease-in;
+    animation-duration: 1s;
     margin-left: -100vw;
     }
 

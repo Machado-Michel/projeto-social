@@ -14,5 +14,21 @@ function toggleSidebar() {
     else {
         navigationHeader.style.marginLeft = '-100vw';
         navigationHeader.style.animationName = '';
+        content.style.filter = '';
     }
 }
+
+function closeSidebar()
+{
+    if(showSidebar)
+    {
+        toggleSidebar();
+    }
+}
+
+window.addEventListener('resize', function(event) {
+    if(window.innerWidth > 768 && showSidebar)
+    {
+        toggleSidebar();
+    }
+});
