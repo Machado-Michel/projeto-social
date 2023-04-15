@@ -8,7 +8,7 @@
 :root {
     --color-white: #fff;
     --color-fundo: rgb(44, 18, 3);
-    --color-active: rgba(151, 74, 29, 0.952);
+    --color-active: rgb(151, 74, 29);
 }
 
 body {
@@ -50,17 +50,18 @@ body {
     height: 50px;
     border-radius: 50%;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.450);
-    transition: 1s;
+    transition: .4s ease-in;
 }
 .navigation_header img:hover  {
     background-color: var(--color-active);
     border-radius: 50%;
     border: 7px solid var(--color-active);
-    box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.450);
-    transition: .3s;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.450);
+    transform: translate(-4px, -5px);
+    transition: transform .4s, border .8s;
 }
 .content {
-    z-index: -1;
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -70,7 +71,6 @@ body {
     padding-top: 2em;
     max-width: 100%;
     height: auto;
-    transition: .6s ease-in;
 }
 
 footer {
@@ -84,9 +84,25 @@ footer {
     text-align: center;
 }
 
+iframe#tela {
+    position: relative;
+    top: -78px;
+    left: -293px;
+    width: 269px;
+    height: 469px;
+}
 
-@media screen and (max-width:768px), (max-height: 850px) {
- 
+@media screen and (max-width:1180px) {
+    
+    iframe#tela {
+            position: absolute;
+                top: 108px;
+                left: 22px;
+                width: 255px;
+                height: 448px;
+        }
+
+
     .btn_icon_header {
         display: block;
     }
@@ -108,7 +124,6 @@ footer {
             height: 40px;
             border-radius: 50%;
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.450);
-            transition: .1s;
         }
 
     @keyframes showSidebar {
